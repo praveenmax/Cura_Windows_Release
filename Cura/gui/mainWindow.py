@@ -16,6 +16,7 @@ from Cura.gui import firmwareInstall
 from Cura.gui import simpleMode
 from Cura.gui import sceneView
 from Cura.gui import aboutWindow
+from Cura.gui import contactSupportWindow
 from Cura.gui.util import dropTarget
 #from Cura.gui.tools import batchRun
 from Cura.gui.tools import pidDebugger
@@ -33,7 +34,7 @@ except:
 
 class mainWindow(wx.Frame):
 	def __init__(self):
-		super(mainWindow, self).__init__(None, title='Cura - ' + version.getVersion())
+		super(mainWindow, self).__init__(None, title='Cura 3Ding Edition')
 
 		wx.EVT_CLOSE(self, self.OnClose)
 
@@ -191,15 +192,19 @@ class mainWindow(wx.Frame):
 		self.menubar.Append(expertMenu, _("Expert"))
 
 		helpMenu = wx.Menu()
-		i = helpMenu.Append(-1, _("Online documentation..."))
-		self.Bind(wx.EVT_MENU, lambda e: webbrowser.open('http://daid.github.com/Cura'), i)
-		i = helpMenu.Append(-1, _("Report a problem..."))
-		self.Bind(wx.EVT_MENU, lambda e: webbrowser.open('https://github.com/daid/Cura/issues'), i)
-		i = helpMenu.Append(-1, _("Check for update..."))
-		self.Bind(wx.EVT_MENU, self.OnCheckForUpdate, i)
+		#i = helpMenu.Append(-1, _("Online documentation..."))
+		#self.Bind(wx.EVT_MENU, lambda e: webbrowser.open('http://daid.github.com/Cura'), i)
+		#i = helpMenu.Append(-1, _("Report a problem..."))
+		#self.Bind(wx.EVT_MENU, lambda e: webbrowser.open('https://github.com/daid/Cura/issues'), i)
+		#i = helpMenu.Append(-1, _("Check for update..."))
+		#self.Bind(wx.EVT_MENU, self.OnCheckForUpdate, i)
 		i = helpMenu.Append(-1, _("Open YouMagine website..."))
 		self.Bind(wx.EVT_MENU, lambda e: webbrowser.open('https://www.youmagine.com/'), i)
-		i = helpMenu.Append(-1, _("About Cura..."))
+		i = helpMenu.Append(-1, _("Open Thingiverse website..."))
+		self.Bind(wx.EVT_MENU, lambda e: webbrowser.open('https://www.thingiverse.com/'), i)
+		i = helpMenu.Append(-1, _("Contact Support"))
+		self.Bind(wx.EVT_MENU, self.OnContactSupport, i)
+		i = helpMenu.Append(-1, _("About 3Ding..."))
 		self.Bind(wx.EVT_MENU, self.OnAbout, i)
 		self.menubar.Append(helpMenu, _("Help"))
 		self.SetMenuBar(self.menubar)
@@ -384,7 +389,7 @@ class mainWindow(wx.Frame):
 			self.splitter.SetSashPosition(self.normalSashPos, True)
 			# Enabled sash
 			self.splitter.SetSashSize(4)
-		self.defaultFirmwareInstallMenuItem.Enable(firmwareInstall.getDefaultFirmware() is not None)
+#		self.defaultFirmwareInstallMenuItem.Enable(firmwareInstall.getDefaultFirmware() is not None)
 		if profile.getMachineSetting('machine_type').startswith('ultimaker2'):
 			self.bedLevelWizardMenuItem.Enable(False)
 			self.headOffsetWizardMenuItem.Enable(False)
@@ -492,11 +497,11 @@ class mainWindow(wx.Frame):
 		#Add tools for machines.
 		self.machineMenu.AppendSeparator()
 
-		self.defaultFirmwareInstallMenuItem = self.machineMenu.Append(-1, _("Install default firmware..."))
-		self.Bind(wx.EVT_MENU, self.OnDefaultMarlinFirmware, self.defaultFirmwareInstallMenuItem)
+		#self.defaultFirmwareInstallMenuItem = self.machineMenu.Append(-1, _("Install default firmware..."))
+		#self.Bind(wx.EVT_MENU, self.OnDefaultMarlinFirmware, self.defaultFirmwareInstallMenuItem)
 
-		i = self.machineMenu.Append(-1, _("Install custom firmware..."))
-		self.Bind(wx.EVT_MENU, self.OnCustomFirmware, i)
+		#i = self.machineMenu.Append(-1, _("Install custom firmware..."))
+		#self.Bind(wx.EVT_MENU, self.OnCustomFirmware, i)
 
 	def OnLoadProfile(self, e):
 		dlg=wx.FileDialog(self, _("Select profile file to load"), os.path.split(profile.getPreference('lastFile'))[0], style=wx.FD_OPEN|wx.FD_FILE_MUST_EXIST)
@@ -649,7 +654,7 @@ class mainWindow(wx.Frame):
 				wx.TheClipboard.Close()
 		except:
 			print "Could not write to clipboard, unable to get ownership. Another program is using the clipboard."
-
+	'''
 	def OnCheckForUpdate(self, e):
 		newVersion = version.checkForNewerVersion()
 		if newVersion is not None:
@@ -657,6 +662,11 @@ class mainWindow(wx.Frame):
 				webbrowser.open(newVersion)
 		else:
 			wx.MessageBox(_("You are running the latest version of Cura!"), _("Awesome!"), wx.ICON_INFORMATION)
+	'''
+	def OnContactSupport(self, e):
+		contactSupportBox = contactSupportWindow.contactSupportWindow()
+		contactSupportBox.Centre()
+		contactSupportBox.Show()
 
 	def OnAbout(self, e):
 		aboutBox = aboutWindow.aboutWindow()

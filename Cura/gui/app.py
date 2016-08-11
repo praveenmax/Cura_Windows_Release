@@ -102,7 +102,7 @@ class CuraApp(wx.App):
 		import webbrowser
 		from Cura.gui import mainWindow
 		from Cura.gui import configWizard
-		from Cura.gui import newVersionDialog
+		#from Cura.gui import newVersionDialog
 		from Cura.util import profile
 		from Cura.util import resources
 		from Cura.util import version
@@ -137,6 +137,8 @@ class CuraApp(wx.App):
 				self.splash = None
 			configWizard.ConfigWizard()
 
+		#Check for newer updates
+		'''
 		if profile.getPreference('check_for_updates') == 'True':
 			newVersion = version.checkForNewerVersion()
 			if newVersion is not None:
@@ -146,6 +148,7 @@ class CuraApp(wx.App):
 				if wx.MessageBox(_("A new version of Cura is available, would you like to download?"), _("New version available"), wx.YES_NO | wx.ICON_INFORMATION) == wx.YES:
 					webbrowser.open(newVersion)
 					return
+		'''
 		if profile.getMachineSetting('machine_name') == '':
 			return
 		self.checkMachineConfigurations()
@@ -160,7 +163,7 @@ class CuraApp(wx.App):
 		self.new_version_dialog = None
 		if profile.getPreference('last_run_version') != version.getVersion(False):
 			profile.putPreference('last_run_version', version.getVersion(False))
-			self.new_version_dialog = newVersionDialog.newVersionDialog().Show()
+			#self.new_version_dialog = newVersionDialog.newVersionDialog().Show()
 
 		setFullScreenCapable(self.mainWindow)
 

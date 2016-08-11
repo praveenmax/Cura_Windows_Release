@@ -341,16 +341,21 @@ G1 F{travel_speed}
 M117 Printing...
 """)
 
+
 class OtherMachineSelectPage(InfoPage):
+	"""
+	This page displays the machine names based on the INI filenames in
+	/cura/resources/machine_profiles/  path
+	"""
 	def __init__(self, parent):
 		super(OtherMachineSelectPage, self).__init__(parent, _("Select a REDD printer"))
-		self.AddText(_("Please select the appropriate REDD printer"))
+		self.AddText(_("Please select the appropriate REDD printer and click Finish"))
 		#self.AddText(_("Note that these profiles are not guaranteed to give good results,\nor work at all. Extra tweaks might be required.\nIf you find issues with the predefined profiles,\nor want an extra profile.\nPlease report it at the github issue tracker."))
 		self.options = []
 		machines = resources.getDefaultMachineProfiles()
 		machines.sort()
 		for filename in machines:
-			name = os.path.splitext(os.path.basename(filename))[0]
+			name = os.path.splitext(os.path.basename(filename))[0] # *.ini filename retrieved here
 			item = self.AddRadioButton(name)
 			item.SetValue(False)
 			item.filename = filename
@@ -363,6 +368,10 @@ class OtherMachineSelectPage(InfoPage):
 		#item.Bind(wx.EVT_RADIOBUTTON, self.OnOtherSelect)
 
 	def OnProfileSelect(self, e):
+		'''
+		 This window leads to the page "Cura is ready to use"
+
+		'''
 		wx.wizard.WizardPageSimple.Chain(self, self.GetParent().otherMachineInfoPage)
 
 	#def OnOtherSelect(self, e):
@@ -418,7 +427,7 @@ class MachineSelectPage(InfoPage):
 		self.AddText(_("What kind of machine do you have:"))
 		
 		#Custom machines radiobts
-		self.ReddFabX1 = self.AddRadioButton("FabX 1", style=wx.RB_GROUP)
+		self.ReddFabX1 = self.AddRadioButton("FabXconfig 1", style=wx.RB_GROUP)
 		self.ReddFabX1.SetValue(True)
 		self.ReddFabX1.Bind(wx.EVT_RADIOBUTTON, self.OnReddFabX1Select)
 
@@ -1004,8 +1013,11 @@ class LulzbotReadyPage(InfoPage):
 		self.AddText(_('Cura is now ready to be used with your Lulzbot.'))
 		self.AddSeperator()
 
-#Start?
 class ConfigWizard(wx.wizard.Wizard):
+	'''
+	This is the starting UI of Cura. This wxWizard window
+	contains other pages such as 'Select a REDD printer', etc
+	'''
 	def __init__(self, addNew = False):
 		super(ConfigWizard, self).__init__(None, -1, _("Configuration Wizard"))
 
@@ -1043,7 +1055,7 @@ class ConfigWizard(wx.wizard.Wizard):
 		wx.wizard.WizardPageSimple.Chain(self.ultimakerCheckupPage, self.bedLevelPage)
 		#wx.wizard.WizardPageSimple.Chain(self.ultimakerCalibrationPage, self.ultimakerCalibrateStepsPerEPage)
 		wx.wizard.WizardPageSimple.Chain(self.printrbotSelectType, self.otherMachineInfoPage)
-		wx.wizard.WizardPageSimple.Chain(self.otherMachineSelectPage, self.otherMachineInfoPage)
+		#wx.wizard.WizardPageSimple.Chain(self.otherMachineSelectPage, self.otherMachineInfoPage)
 
 		self.FitToPage(self.firstInfoPage)
 		self.GetPageAreaSizer().Add(self.firstInfoPage)
