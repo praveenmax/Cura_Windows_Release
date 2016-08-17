@@ -26,7 +26,7 @@ class aboutWindow(wx.Frame):
 		s.Add(wx.StaticText(p, -1, 'Cura is currently developed and maintained by Ultimaker.'))
 		s.Add(wx.StaticText(p, -1, 'Cura 3Ding Edition has been modified and maintained by 3Ding for use with 3Ding 3D printers.'))
 		s.Add(wx.StaticText(p, -1, 'For more info, visit our website, '))
-		url = wx.HyperlinkCtrl(p, name='3Ding website', url='http://www.3ding.in', id=-1,label='')
+		url = wx.HyperlinkCtrl(p, name='3Ding website', url='http://www.3ding.in' ,id=-1, label='')
 		s.Add(url)
 
 		s.Add(wx.StaticText(p, -1, 'Cura is build with the following components:'), flag=wx.TOP, border=10)

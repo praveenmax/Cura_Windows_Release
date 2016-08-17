@@ -55,9 +55,9 @@ class preferencesDialog(wx.Dialog):
 		self.browseButton.Bind(wx.EVT_BUTTON, self.OnBrowseSDRootFolder)
 		right.GetSizer().Add(self.browseButton, (right.GetSizer().GetRows()-1, 2), flag=wx.ALIGN_CENTER_VERTICAL)
 
-		configBase.TitleRow(right, _("Cura settings"))
-		configBase.SettingRow(right, 'check_for_updates')
-		configBase.SettingRow(right, 'submit_slice_information')
+		#configBase.TitleRow(right, _("Cura settings"))
+		#configBase.SettingRow(right, 'check_for_updates')
+		#configBase.SettingRow(right, 'submit_slice_information')
 
 		self.okButton = wx.Button(right, -1, 'Ok')
 		right.GetSizer().Add(self.okButton, (right.GetSizer().GetRows(), 0), flag=wx.BOTTOM, border=5)
