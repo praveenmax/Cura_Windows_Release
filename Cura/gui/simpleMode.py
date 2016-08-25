@@ -156,7 +156,7 @@ class simpleModePanel(wx.Panel):
 		self.printSupport = wx.CheckBox(self, -1, _("Print support structure"))
 		self.platform_adhesion_panel = wx.Panel(self)
 		self.platform_adhesion_label = wx.StaticText(self.platform_adhesion_panel, -1, _("Platform adhesion"))
-		self.platform_adhesion_combo = wx.ComboBox(self.platform_adhesion_panel, -1, '', choices=[_("None"), _("Brim")], style=wx.CB_DROPDOWN|wx.CB_READONLY)
+		self.platform_adhesion_combo = wx.ComboBox(self.platform_adhesion_panel, -1, '', choices=[_("None"), _("Brim"), _("Raft")], style=wx.CB_DROPDOWN|wx.CB_READONLY)
 		self.platform_adhesion_combo.SetSelection(int(profile.getPreference('simpleModePlatformAdhesion')))
 		sizer = wx.BoxSizer(wx.HORIZONTAL)
 		sizer.Add(self.platform_adhesion_label, 0, wx.ALIGN_CENTER_VERTICAL | wx.TOP, 10)

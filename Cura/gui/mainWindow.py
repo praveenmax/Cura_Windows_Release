@@ -5,7 +5,7 @@ import os
 import webbrowser
 import sys
 
-
+from Cura.gui import printWindow
 from Cura.gui import configBase
 from Cura.gui import expertConfig
 from Cura.gui import alterationPanel
@@ -16,12 +16,16 @@ from Cura.gui import firmwareInstall
 from Cura.gui import simpleMode
 from Cura.gui import sceneView
 from Cura.gui import aboutWindow
+from Cura.gui import contactSupportWindow
 from Cura.gui.util import dropTarget
 #from Cura.gui.tools import batchRun
 from Cura.gui.tools import pidDebugger
 from Cura.gui.tools import minecraftImport
 from Cura.util import profile
 from Cura.util import version
+from Cura.util.printerConnection import printerConnectionManager
+from Cura.util import pluginInfo
+
 import platform
 from Cura.util import meshLoader
 
@@ -33,7 +37,7 @@ except:
 
 class mainWindow(wx.Frame):
 	def __init__(self):
-		super(mainWindow, self).__init__(None, title='Cura - ' + version.getVersion())
+		super(mainWindow, self).__init__(None, title='Cura 3Ding Edition')
 
 		wx.EVT_CLOSE(self, self.OnClose)
 
@@ -188,18 +192,26 @@ class mainWindow(wx.Frame):
 		self.headOffsetWizardMenuItem = expertMenu.Append(-1, _("Run head offset wizard..."))
 		self.Bind(wx.EVT_MENU, self.OnHeadOffsetWizard, self.headOffsetWizardMenuItem)
 
+		#MAX : Run Printer control wizard
+		self.runPrinterControlWizardMenuItem = expertMenu.Append(wx.NewId(), _("Run Printer Control wizard..."))
+		self.Bind(wx.EVT_MENU, self.OnPrinterControlWizard, self.runPrinterControlWizardMenuItem)
+
 		self.menubar.Append(expertMenu, _("Expert"))
 
 		helpMenu = wx.Menu()
-		i = helpMenu.Append(-1, _("Online documentation..."))
-		self.Bind(wx.EVT_MENU, lambda e: webbrowser.open('http://daid.github.com/Cura'), i)
-		i = helpMenu.Append(-1, _("Report a problem..."))
-		self.Bind(wx.EVT_MENU, lambda e: webbrowser.open('https://github.com/daid/Cura/issues'), i)
-		i = helpMenu.Append(-1, _("Check for update..."))
-		self.Bind(wx.EVT_MENU, self.OnCheckForUpdate, i)
+		#i = helpMenu.Append(-1, _("Online documentation..."))
+		#self.Bind(wx.EVT_MENU, lambda e: webbrowser.open('http://daid.github.com/Cura'), i)
+		#i = helpMenu.Append(-1, _("Report a problem..."))
+		#self.Bind(wx.EVT_MENU, lambda e: webbrowser.open('https://github.com/daid/Cura/issues'), i)
+		#i = helpMenu.Append(-1, _("Check for update..."))
+		#self.Bind(wx.EVT_MENU, self.OnCheckForUpdate, i)
 		i = helpMenu.Append(-1, _("Open YouMagine website..."))
 		self.Bind(wx.EVT_MENU, lambda e: webbrowser.open('https://www.youmagine.com/'), i)
-		i = helpMenu.Append(-1, _("About Cura..."))
+		i = helpMenu.Append(-1, _("Open Thingiverse website..."))
+		self.Bind(wx.EVT_MENU, lambda e: webbrowser.open('https://www.thingiverse.com/'), i)
+		i = helpMenu.Append(-1, _("Contact Support"))
+		self.Bind(wx.EVT_MENU, self.OnContactSupport, i)
+		i = helpMenu.Append(-1, _("About 3Ding..."))
 		self.Bind(wx.EVT_MENU, self.OnAbout, i)
 		self.menubar.Append(helpMenu, _("Help"))
 		self.SetMenuBar(self.menubar)
@@ -294,6 +306,8 @@ class mainWindow(wx.Frame):
 		if pluginCount > 1:
 			self.scene.notification.message("Warning: %i plugins from the previous session are still active." % pluginCount)
 
+		self._printerConnectionManager = printerConnectionManager.PrinterConnectionManager()
+
 	def onPluginUpdate(self,msg): #receives commands from the plugin thread
 		cmd = str(msg.data).split(";")
 		if cmd[0] == "OpenPluginProgressWindow":
@@ -384,7 +398,7 @@ class mainWindow(wx.Frame):
 			self.splitter.SetSashPosition(self.normalSashPos, True)
 			# Enabled sash
 			self.splitter.SetSashSize(4)
-		self.defaultFirmwareInstallMenuItem.Enable(firmwareInstall.getDefaultFirmware() is not None)
+#		self.defaultFirmwareInstallMenuItem.Enable(firmwareInstall.getDefaultFirmware() is not None)
 		if profile.getMachineSetting('machine_type').startswith('ultimaker2'):
 			self.bedLevelWizardMenuItem.Enable(False)
 			self.headOffsetWizardMenuItem.Enable(False)
@@ -492,11 +506,11 @@ class mainWindow(wx.Frame):
 		#Add tools for machines.
 		self.machineMenu.AppendSeparator()
 
-		self.defaultFirmwareInstallMenuItem = self.machineMenu.Append(-1, _("Install default firmware..."))
-		self.Bind(wx.EVT_MENU, self.OnDefaultMarlinFirmware, self.defaultFirmwareInstallMenuItem)
+		#self.defaultFirmwareInstallMenuItem = self.machineMenu.Append(-1, _("Install default firmware..."))
+		#self.Bind(wx.EVT_MENU, self.OnDefaultMarlinFirmware, self.defaultFirmwareInstallMenuItem)
 
-		i = self.machineMenu.Append(-1, _("Install custom firmware..."))
-		self.Bind(wx.EVT_MENU, self.OnCustomFirmware, i)
+		#i = self.machineMenu.Append(-1, _("Install custom firmware..."))
+		#self.Bind(wx.EVT_MENU, self.OnCustomFirmware, i)
 
 	def OnLoadProfile(self, e):
 		dlg=wx.FileDialog(self, _("Select profile file to load"), os.path.split(profile.getPreference('lastFile'))[0], style=wx.FD_OPEN|wx.FD_FILE_MUST_EXIST)
@@ -611,6 +625,57 @@ class mainWindow(wx.Frame):
 	def OnHeadOffsetWizard(self, e):
 		configWizard.headOffsetWizard()
 
+	def isSerialConnectionAvailable(self):
+		"""
+			Checks whether a serial connection exists
+			Author : PraveenMax
+		:return: bool
+		"""
+		print "Checking for serial comm"
+		communicationGroup = self._printerConnectionManager.getAvailableGroup()
+
+		if communicationGroup is not None:
+			if( len( communicationGroup.getAvailableConnections() ) > 0 ):
+				print "Serial comm available"
+				return True
+			else:
+				print "No Serial comm available"
+				return False
+		else:
+			print "No Serial comm found"
+			return False
+
+
+
+	def OnPrinterControlWizard(self, e):
+		connectionGroup = self._printerConnectionManager.getAvailableGroup()
+		connection = None
+
+		#Select a serial connection
+		if connectionGroup is not None:
+			connections = connectionGroup.getAvailableConnections()
+			connection = connections[0]
+
+		if connection is not None:
+			#Select the pronterface plugin dir fullpath and run it
+			for p in pluginInfo.getPluginList('printwindow'):
+				if p.getName() == "Pronterface UI":
+					connection.window = printWindow.printWindowPlugin(self, connection, p.getFullFilename())
+					break
+				else:
+					print "REDD : Pronterface plugin is missing"
+			connection.window.Show()
+			connection.window.Raise()
+		else:
+			wx.MessageBox("Please connect a 3D printer to open Printer Control wizard","3D Printer not found",wx.OK | wx.ICON_ERROR)
+			print "MAX : A serial comm to 3D printer is needed to proceed"
+
+		#if not connection.loadGCodeData(self._engine.getResult().getGCode()):
+		#	if connection.isPrinting():
+		#		self.notification.message("Cannot start print, because other print still running.")
+		#	else:
+		#		self.notification.message("Failed to start print...")
+
 	def OnExpertOpen(self, e):
 		ecw = expertConfig.expertConfigWindow(lambda : self.scene.sceneUpdated())
 		ecw.Centre()
@@ -649,7 +714,7 @@ class mainWindow(wx.Frame):
 				wx.TheClipboard.Close()
 		except:
 			print "Could not write to clipboard, unable to get ownership. Another program is using the clipboard."
-
+	'''
 	def OnCheckForUpdate(self, e):
 		newVersion = version.checkForNewerVersion()
 		if newVersion is not None:
@@ -657,6 +722,11 @@ class mainWindow(wx.Frame):
 				webbrowser.open(newVersion)
 		else:
 			wx.MessageBox(_("You are running the latest version of Cura!"), _("Awesome!"), wx.ICON_INFORMATION)
+	'''
+	def OnContactSupport(self, e):
+		contactSupportBox = contactSupportWindow.contactSupportWindow()
+		contactSupportBox.Centre()
+		contactSupportBox.Show()
 
 	def OnAbout(self, e):
 		aboutBox = aboutWindow.aboutWindow()

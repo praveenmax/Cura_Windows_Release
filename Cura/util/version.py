@@ -59,6 +59,7 @@ def isDevVersion():
 	hgPath  = os.path.abspath(os.path.join(os.path.split(os.path.abspath(__file__))[0], "../../.hg"))
 	return os.path.exists(gitPath) or os.path.exists(hgPath)
 
+'''
 def checkForNewerVersion():
 	if isDevVersion():
 		return None
@@ -85,3 +86,4 @@ def checkForNewerVersion():
 
 if __name__ == '__main__':
 	print(getVersion())
+'''
