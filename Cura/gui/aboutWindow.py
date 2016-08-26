@@ -17,12 +17,17 @@ class aboutWindow(wx.Frame):
 		s = wx.BoxSizer(wx.VERTICAL)
 		p.SetSizer(s)
 
-		title = wx.StaticText(p, -1, 'Cura')
+		title = wx.StaticText(p, -1, 'Cura 3Ding Edition')
 		title.SetFont(wx.Font(18, wx.SWISS, wx.NORMAL, wx.BOLD))
 		s.Add(title, flag=wx.ALIGN_CENTRE|wx.EXPAND|wx.BOTTOM, border=5)
+		s.Add(wx.StaticText(p, -1, 'version : 15.04.6\n'))
 
 		s.Add(wx.StaticText(p, -1, 'End solution for Open Source Fused Filament Fabrication 3D printing.'))
 		s.Add(wx.StaticText(p, -1, 'Cura is currently developed and maintained by Ultimaker.'))
+		s.Add(wx.StaticText(p, -1, 'Cura 3Ding Edition has been modified and maintained by 3Ding for use with 3Ding 3D printers.'))
+		s.Add(wx.StaticText(p, -1, 'For more info, visit our website, '))
+		url = wx.HyperlinkCtrl(p, name='3Ding website', url='http://www.3ding.in' ,id=-1, label='')
+		s.Add(url)
 
 		s.Add(wx.StaticText(p, -1, 'Cura is build with the following components:'), flag=wx.TOP, border=10)
 		self.addComponent('Cura', 'Graphical user interface', 'AGPLv3', 'https://github.com/daid/Cura')
