@@ -1,5 +1,6 @@
 __copyright__ = "Copyright (C) 2013 David Braam - Released under terms of the AGPLv3 License"
 
+import sys
 import wx
 import ConfigParser as configparser
 import os.path
@@ -214,8 +215,13 @@ class simpleModePanel(wx.Panel):
 		material_name = self._getActiveMaterialName()
 		nozzle_name = self._getActiveNozzleSizeName()
 		if profile_name is None:
-			self._print_profile_options[1].SetValue(True)
-			profile_name = self._getActiveProfileName()
+			try:
+				self._print_profile_options[1].SetValue(True)
+				profile_name = self._getActiveProfileName()
+			except:
+				print("Max : Array index error :", sys.exc_info()[0])
+				raise
+
 
 		if material_name is None:
 			if len(self._print_material_options) > 0:
