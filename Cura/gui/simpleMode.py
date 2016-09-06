@@ -220,8 +220,6 @@ class simpleModePanel(wx.Panel):
 				profile_name = self._getActiveProfileName()
 			except:
 				print("Max : Array index error :", sys.exc_info()[0])
-				raise
-
 
 		if material_name is None:
 			if len(self._print_material_options) > 0:
