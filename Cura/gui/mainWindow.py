@@ -658,8 +658,9 @@ class mainWindow(wx.Frame):
 
 		if connection is not None:
 			#Select the pronterface plugin dir fullpath and run it
-			for p in pluginInfo.getPluginList('printwindow'):
-				if p.getName() == "Pronterface UI":
+			for p in pluginInfo.getPluginList('printwindow_mod'):
+				if p.getName() == "Pronterface UI for REDD Cura":
+					print "Opening proterface window"
 					connection.window = printWindow.printWindowPlugin(self, connection, p.getFullFilename())
 					break
 				else:

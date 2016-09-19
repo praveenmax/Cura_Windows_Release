@@ -2,64 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a06b01a0-6168-4a63-9765-4273fecdd015" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/BFB.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/DeltaBot.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/Hephestos.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/Hephestos_XL.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/Kupido.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/MakerBotReplicator.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/Mendel.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/Ord.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/Prusa Mendel i3.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/RIGID3D HOBBY.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/ROBO 3D R1.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/Rigid3D.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/Rigid3d_Zero.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/RigidBot.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/RigidBotBig.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/Witbox.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/Zone3d Printer.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/julia.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/punchtec Connect XL.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/machine_profiles/rigid3d_3rdGen.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/1_low.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/2_normal.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/3_high.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/4_ulti.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/ultimaker2+/abs_0.25mm_high.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/ultimaker2+/abs_0.4mm_fast.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/ultimaker2+/abs_0.4mm_high.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/ultimaker2+/abs_0.4mm_normal.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/ultimaker2+/abs_0.6mm_normal.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/ultimaker2+/abs_0.8mm_fast.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/ultimaker2+/cpe_0.25mm_high.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/ultimaker2+/cpe_0.4mm_fast.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/ultimaker2+/cpe_0.4mm_high.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/ultimaker2+/cpe_0.4mm_normal.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/ultimaker2+/cpe_0.6mm_normal.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/ultimaker2+/cpe_0.8mm_fast.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/ultimaker2+/pla_0.25mm_high.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/ultimaker2+/pla_0.4mm_fast.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/ultimaker2+/pla_0.4mm_high.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/ultimaker2+/pla_0.4mm_normal.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/ultimaker2+/pla_0.6mm_normal.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/ultimaker2+/pla_0.8mm_fast.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/quickprint/profiles/ultimaker2+extended/redirect.ini" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cura/gui/aboutWindow.py" afterPath="$PROJECT_DIR$/Cura/gui/aboutWindow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cura/gui/alterationPanel.py" afterPath="$PROJECT_DIR$/Cura/gui/alterationPanel.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cura/gui/app.py" afterPath="$PROJECT_DIR$/Cura/gui/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cura/gui/configBase.py" afterPath="$PROJECT_DIR$/Cura/gui/configBase.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cura/gui/configWizard.py" afterPath="$PROJECT_DIR$/Cura/gui/configWizard.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cura/gui/expertConfig.py" afterPath="$PROJECT_DIR$/Cura/gui/expertConfig.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cura/gui/firmwareInstall.py" afterPath="$PROJECT_DIR$/Cura/gui/firmwareInstall.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Cura_Windows_Release.iml" afterPath="$PROJECT_DIR$/.idea/Cura_Windows_Release.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cura/gui/mainWindow.py" afterPath="$PROJECT_DIR$/Cura/gui/mainWindow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cura/gui/newVersionDialog.py" afterPath="$PROJECT_DIR$/Cura/gui/newVersionDialog.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cura/gui/pluginPanel.py" afterPath="$PROJECT_DIR$/Cura/gui/pluginPanel.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cura/gui/preferencesDialog.py" afterPath="$PROJECT_DIR$/Cura/gui/preferencesDialog.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cura/gui/printWindow.py" afterPath="$PROJECT_DIR$/Cura/gui/printWindow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cura/gui/sceneView.py" afterPath="$PROJECT_DIR$/Cura/gui/sceneView.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cura/gui/simpleMode.py" afterPath="$PROJECT_DIR$/Cura/gui/simpleMode.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cura/gui/splashScreen.py" afterPath="$PROJECT_DIR$/Cura/gui/splashScreen.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cura.bat" afterPath="$PROJECT_DIR$/cura.bat" />
     </list>
     <ignored path="Cura_Windows_Release.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,24 +25,32 @@
     <favorites_list name="Cura_Windows_Release" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="cura.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Cura/cura.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Cura/gui/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-              <folding>
-                <element signature="e#378#411#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="143">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aboutWindow.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Cura/gui/aboutWindow.py">
+      <file leaf-file-name="mainWindow.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Cura/gui/mainWindow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="318">
+              <caret line="312" column="32" selection-start-line="312" selection-start-column="32" selection-end-line="312" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/PronterfaceUI/script.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -110,6 +65,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Cura/gui/aboutWindow.py" />
+        <option value="$PROJECT_DIR$/cura.bat" />
+        <option value="$PROJECT_DIR$/Cura/gui/simpleMode.py" />
+        <option value="$PROJECT_DIR$/Cura/gui/mainWindow.py" />
+        <option value="$PROJECT_DIR$/Cura/gui/app.py" />
       </list>
     </option>
   </component>
@@ -132,7 +91,7 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>Buildout</id>
+            <id>PyPep8NamingInspection</id>
           </State>
         </selected-state>
       </profile-state>
@@ -164,7 +123,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -237,6 +195,80 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cura_Windows_Release" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cura_Windows_Release" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cura_Windows_Release" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cura_Windows_Release" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PronterfaceUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cura_Windows_Release" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cura_Windows_Release" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cura" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cura_Windows_Release" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cura_Windows_Release" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cura" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -253,9 +285,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="H:\My_Codings\Git_Stuffs\Cura_Windows_Release\python\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Cura" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Cura_Windows_Release" />
@@ -427,24 +459,27 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3133236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42857143" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14563107" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19255663" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.76537216" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24433658" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.bat" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -462,7 +497,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cura.bat">
+    <entry file="file://$PROJECT_DIR$/Cura/gui/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -470,11 +505,195 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/cura.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/Lib/power/darwin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="43" column="67" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/aboutWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/util/machineCom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/cura.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/Lib/power/darwin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="67" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/aboutWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/util/machineCom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/cura.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/Lib/power/darwin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="43" column="67" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/aboutWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/cura.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/Lib/power/darwin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/simpleMode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3621">
+          <caret line="219" column="51" selection-start-line="0" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/aboutWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/cura.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/simpleMode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3723">
+          <caret line="219" column="51" selection-start-line="0" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/aboutWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/cura.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/simpleMode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3723">
+          <caret line="219" column="51" selection-start-line="0" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/aboutWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/cura.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/aboutWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Cura/gui/contactSupportWindow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -482,25 +701,87 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6631" column="0" selection-start-line="6631" selection-start-column="0" selection-end-line="6631" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cura.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/simpleMode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="224" column="0" selection-start-line="222" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/Lib/site-packages/wx-2.8-msw-unicode/wx/_core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="7891" column="33" selection-start-line="7891" selection-start-column="33" selection-end-line="7891" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/util/machineCom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Cura/gui/aboutWindow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="117">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/Lib/power/darwin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="43" column="67" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Cura/cura.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="e#378#411#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/PronterfaceUI/script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/app.py.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cura/gui/mainWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="312" column="32" selection-start-line="312" selection-start-column="32" selection-end-line="312" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
